@@ -1,0 +1,65 @@
+/* TITLE */
+.title {
+  margin-left: 3vh;
+  margin-top: 15vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #141827;
+}
+
+/* CONTAINER */
+.about-me {
+  background-color: #141827;
+  display: flex;
+  height: 40vh;
+  margin: 2vh;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 2vh;
+  line-height: 1vh;
+  text-align: center;
+  align-items: center;
+  color: #FFFAE3;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume {
+    color: #736681;
+}
+
+/* DOWNLOAD */
+
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.5em 0.8em 1.2em;
+    color: #FFFAE3;
+    background: #ad5389;
+    background: linear-gradient(
+      0deg,
+      #736681 0%,
+      #62455B 100%
+    );
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #736681;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    margin-left: 37%;
+  }
+  
+  .cssbuttons-io-button svg {
+    margin-right: 8px;
+  }
+  
+  .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #736681;
+  }
+  
+  .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #736681;
+  }
+  
