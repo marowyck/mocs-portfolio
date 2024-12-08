@@ -1,11 +1,11 @@
 /* CONTACT */
 
 .contact-title {
-  margin-left: 43%;
   margin-top: 15vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #141827;
   font-size: 32px;
+  text-align: center;
 }
 
 /* CARD */
@@ -23,7 +23,7 @@
   border-radius: 15px;
   position: relative;
   overflow: hidden;
-  margin-left: 39%;
+  margin-left: 40%;
   margin-top: 2vh;
   border: solid 2px #141827;
 }
@@ -106,4 +106,65 @@
 .button:hover {
   background-color: #62455B;
   transform: scale(1.1);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  /* TABLET */
+  .contact-title {
+    font-size: 28px;
+    margin-left: 0;
+    margin-top: 12vh;
+  }
+
+  .contact-card {
+    width: 300px;
+    height: 250px;
+    margin-left: 30%;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-info span {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* MOBILE */
+  .contact-title {
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 10vh;
+    text-align: center;
+  }
+
+  .contact-card {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 2vh;
+  }
+
+  .image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card-info span {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 }

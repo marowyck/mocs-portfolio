@@ -1,39 +1,95 @@
-
 /* LOGO */ 
-
 .logo {
-    background-color: #141827;
-    display: flex;
-    height: 15vh; 
-    margin: 2vh;
-    padding: 20px;
-    border-radius: 20px;
-  }
+  background-color: #141827;
+  display: flex;
+  height: 15vh; 
+  margin: 2vh;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: center; 
+}
 
 .logo img {
-    width: 15vh;
-    border-radius: 20px;
-    justify-content: right;
+  width: 15vh;
+  max-width: 100%; 
+  height: auto;
+  border-radius: 20px;
 }
-  
-/* MIDDLE */
 
+/* MIDDLE */
 .middle {
   display: flex;
   list-style: none;
   color: #fffae3;
   font-size: 30px;
   gap: 190px;
+  justify-content: center; 
+}
+
+.middle li {
+  text-align: center;
 }
 
 /* SOCIAL */
-
 .social {
   margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .social img {
   width: 80px;
-  justify-content: center;
-  align-items: center;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  /* TABLET */
+  .logo {
+    height: 10vh;
+    margin: 1vh;
+  }
+
+  .logo img {
+    width: 12vh;
+  }
+
+  .middle {
+    font-size: 24px;
+    gap: 60px; 
+  }
+
+  .social img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* MOBILE */
+  .logo {
+    height: 8vh;
+    margin: 1vh;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 10vh;
+  }
+
+  .middle {
+    flex-direction: column;
+    font-size: 20px;
+    gap: 20px; 
+  }
+
+  .social img {
+    width: 50px;
+    height: 50px; 
+  }
 }
